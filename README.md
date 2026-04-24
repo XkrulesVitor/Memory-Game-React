@@ -1,10 +1,9 @@
 # 🧩 Memory Game - React
 
+<img width="1920" height="1040" alt="Demonstraçao" src="https://github.com/user-attachments/assets/b186a75c-422b-41c5-bae6-6632bc2d19d3" />
+
 Este projeto é um **Jogo da Memória** dinâmico, interativo e totalmente responsivo, desenvolvido originalmente para compor o ecossistema de sites da **CP2eJR**. 
-
 O jogo foi construído utilizando **Next.js**, **Tailwind CSS** e conceitos avançados de estado do **React**, focando em uma experiência de usuário fluida com animações 3D e lógica escalável.
-
-![Demonstração do Jogo](./public/Demonstracao/seu_arquivo.gif)
 
 ## 🚀 Como Customizar o Jogo
 
