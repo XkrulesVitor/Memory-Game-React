@@ -4,6 +4,8 @@ Este projeto é um **Jogo da Memória** dinâmico, interativo e totalmente respo
 
 O jogo foi construído utilizando **Next.js**, **Tailwind CSS** e conceitos avançados de estado do **React**, focando em uma experiência de usuário fluida com animações 3D e lógica escalável.
 
+![Demonstração do Jogo](./public/Demonstracao/seu_arquivo.gif)
+
 ## 🚀 Como Customizar o Jogo
 
 A maior vantagem deste projeto é a sua facilidade de configuração. O tabuleiro se ajusta automaticamente conforme a quantidade de imagens que você definir.

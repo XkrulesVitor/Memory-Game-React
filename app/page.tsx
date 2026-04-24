@@ -73,7 +73,7 @@ export default function JogoDaMemoria() {
 
           return (
            <div key={carta.id} className="relative h-48 [perspective:1000px] cursor-pointer" onClick={() => handleClique(index)}>
-          <div className={`relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] 
+          <div className={`relative w-full h-full transition-all duration-500 hover:scale-110 [transform-style:preserve-3d] 
             ${(viradas.includes(index) || resolvidas.includes(index)) ? '[transform:rotateY(180deg)]' : ''} 
             ${resolvidas.includes(index) ? 'animate-pop' : ''}`}>
                 {/* LADO DA FRENTE */}
