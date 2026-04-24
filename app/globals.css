@@ -19,6 +19,16 @@
   }
 }
 
+@keyframes pop {
+  0% { transform: scale(1) rotateY(180deg); }
+  50% { transform: scale(1.1) rotateY(180deg); }
+  100% { transform: scale(1) rotateY(180deg); }
+}
+
+.animate-pop {
+  animation: pop 0.4s ease-out;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

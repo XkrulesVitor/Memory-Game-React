@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Memory Game - React
 
-## Getting Started
+Este projeto é um **Jogo da Memória** dinâmico, interativo e totalmente responsivo, desenvolvido originalmente para compor o ecossistema de sites da **CP2eJR**. 
 
-First, run the development server:
+O jogo foi construído utilizando **Next.js**, **Tailwind CSS** e conceitos avançados de estado do **React**, focando em uma experiência de usuário fluida com animações 3D e lógica escalável.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Como Customizar o Jogo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A maior vantagem deste projeto é a sua facilidade de configuração. O tabuleiro se ajusta automaticamente conforme a quantidade de imagens que você definir.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Preparando as Imagens
+Coloque todos os arquivos de imagem (PNG, JPG, SVG, etc.) que deseja usar como pares dentro da pasta:
+`public/`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Configurando o Array de Cartas
+Para alterar as imagens ou aumentar a dificuldade (número de pares), você não precisa mexer na lógica do jogo. Basta editar o arquivo:
+`app/carts.ts` (ou o diretório onde você salvou suas constantes)
 
-## Learn More
+Edite o array conforme o exemplo abaixo:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+// Basta adicionar ou remover caminhos de imagens aqui
+export const IMAGENS_JOGO = [
+  "/A.png",
+  "/B.png",
+  "/C.png",
+  "/D.png",
+  "/E.png",
+  "/F.png",
+  // Se você adicionar mais imagens aqui, o jogo aumentará de tamanho sozinho!
+];
